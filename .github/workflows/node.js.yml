@@ -11,10 +11,10 @@ jobs:
           matrix:
             node-version: [16]
     steps:
-    - uses: actions/checkout@master
+#     - uses: actions/checkout@master
     - name: Install
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
     - name: test
-      run:
+      run: |
         npm i
         npm run dev
