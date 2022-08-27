@@ -12,9 +12,8 @@ jobs:
             node-version: [16]
     steps:
     - uses: actions/checkout@master
-    - name: Install
-      uses: actions/setup-node@v3
-    - name: test
-      run: |
-        npm i
-        npm run dev
+#       uses: actions/setup-node@v3
+    - name: npm install
+      run: npm install
+    - name: npm run dev
+      run: npm run dev
