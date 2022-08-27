@@ -7,10 +7,12 @@ jobs:
   build:
  
     runs-on: ubuntu-latest
- 
+    strategy:
+          matrix:
+            node-version: [16]
     steps:
     - uses: actions/checkout@master
-    - name: Use Node.js 16.x
+    - name: Install
       uses: actions/setup-node@v1
     - name: test
       run:
