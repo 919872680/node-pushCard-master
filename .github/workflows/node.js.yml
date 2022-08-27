@@ -10,7 +10,7 @@ jobs:
  
     steps:
     - uses: actions/checkout@master
-    - name: Use Node.js 10.x
+    - name: Use Node.js 16.x
       uses: actions/setup-node@v1
     - name: test
       run:
